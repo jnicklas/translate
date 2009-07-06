@@ -9,8 +9,8 @@ require 'spec'
 require 'spec/autorun'
 require 'spec/rails'
 
-$: << File.expand_path(File.dirname(__FILE__) + '/../lib')
-require 'translate'
+$: << File.expand_path(File.dirname(__FILE__) + '/..')
+require 'lib/translate'
 
 Spec::Runner.configure do |config|
   config.use_transactional_fixtures = true
